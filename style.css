@@ -1,0 +1,248 @@
+.body {
+    background-color: rgb(231, 228, 228)
+
+}
+.facebook-wrapper {
+    display: flex;
+   /* background-color: blue;*/
+}
+.column {
+    flex: 0.3;
+   /* border: 1px solid black;*/
+}
+.column.middle {
+    flex:0.7 ;
+}
+.column-inner-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+.upper {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    height: 230px
+}
+.facebook-story {
+    /*border: 1px solid black;*/
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 10px 0px rgb(223, 221, 221);
+    flex: 1;
+    transition: all .2s ease-in-out;
+    background-size: 100%;
+}
+.facebook-story:not(:last-child) {
+    margin-right: 10px;
+}
+.story-1 {
+    display: flex;
+    flex-direction: column;
+    background: url(images/story4.jpg) center ;
+    background-size: 100%;
+    overflow: hidden;
+
+
+}
+.facebook-story img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.2s ease-in-out;
+}
+.facebook-story:hover{
+    background-size: 105%;
+}
+.story-2 {
+    background: white url(images/story1.jpg) no-repeat center;
+    background-size: 100%;
+}
+.story-3 {
+    background: white url(images/story2.jpg) no-repeat center;
+    background-size: 100%;
+}
+.story-4 {
+    background: white url(images/story1.jpg) no-repeat center;
+    background-size: 100%;
+}
+.story-5 {
+    background: white url(images/story4.jpg) center;
+    background-size: 100%;
+}
+.profile-1 {
+    display: flex;
+}
+.on-line {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    left: 30%;
+    top: 40px;
+    background-color:rgb(51, 207, 51);
+    border: 3px solid white;
+    z-index: 3;
+}
+.next-button button {
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    left: 100%;
+    top: 50%;
+    transform: translate(-50% , -50%);
+    border-radius:20px ;
+    background-color: white;
+}
+.next-button img {
+    font-size: 40px;
+    border-radius:20px ;
+    background-color:none;
+    border: none;
+    margin-top: 2px;
+} 
+.story-create {
+    background-color:white;
+    position: relative;
+    width: 100%;
+    height: 80px;
+    border: 1px solid white;
+    margin: 0px;
+    left: 50%;
+    transform: translate(-50% ,180%);
+    bottom: 0px;
+}
+button {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    position: absolute;
+    left: 50%;
+    transform: translate(-45%, -50%)
+    
+}
+button img {
+    font-size: 55px;
+    font-weight: 100;
+    border-radius: 20px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-49%, -50%)
+    
+}
+.story-create i :hover {
+    transform: unset;
+}
+/*.story-create p {
+    position: absolute;
+    margin-left: 50px;
+    font-size: 24px;
+}*/
+.create-story-text p {
+    margin: 0px;
+    margin-left: 40px;
+    padding-top: 20px;
+    font-size: 20px;
+    font-style: bold;
+    font-weight: bold;
+}
+p.create-text2  {
+    padding-top: 0px;
+    font-size: 19px;
+    margin-left: 45px;
+
+}
+.story-text p {
+    position: relative;
+    top: 185px; 
+    left: 20px;
+    color: white;
+    font-weight: bold;
+}
+.text-3 p {
+    margin: 0px;
+    top: 185px;
+}
+img.avatar  {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    border-radius: 30px;
+    border: 5px solid blue;
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 10px;
+    z-index: 1;
+
+}
+img.avatar:hover {
+    transform: unset;
+}
+.lower {
+    margin-top: 20px;
+    background-color: white;
+    border-radius: 10px;
+}
+.lower-inner {
+    display: flex;
+    padding-top: 10px;
+    width: 100%;
+    /*border: 1px solid black;*/
+
+}
+.lower-inner-image img {
+    height: 40px;
+    width: 40px;
+    border-radius: 30px;
+    margin-left: 15px;
+    object-fit: cover;
+}
+.lower-inner-text {
+    width: 630px;
+    border-radius: 10px;
+    margin-left: 10px;
+    align-self: center;
+    
+}
+.lower-inner-text input {
+    width: 100%;
+    border-radius: 15px ;
+    border: 0px;
+    background-color: rgb(231, 228, 228);
+    padding: 10px 10px;
+}
+.rule {
+    border: 1px solid rgb(211, 208, 208)
+}
+/*.lower-inner-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+}*/
+.lower-inner2 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.inner-wrapper {
+    display: flex;
+}
+img.video-img {
+    width: 20px;
+    height: 40px;
+    align-self: center;
+    margin-right: 10px;
+}
+img.photo-img {
+    width: 20px;
+    height: 25px;
+    margin-right: 10px;
+    align-self: center;  
+}
+img.feeling-img {
+    width: 30px;
+    height: 20px;
+    margin-right: 5px;
+    align-self: center;
+}
